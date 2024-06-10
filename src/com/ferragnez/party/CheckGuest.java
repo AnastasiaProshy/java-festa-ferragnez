@@ -10,4 +10,9 @@ public class CheckGuest {
 		
 		String[] invitedGuests = {"Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Francesco Totti", "Ilary Blasi", "Bebe Vio", "Luis", "Martina Maccherone", "Pardis Zarei", "Rachel Zeilic"};
 		
+		// ask user's name
+		System.out.println("Please type your Name:");
+		String userName = noteDown.nextLine();
+		noteDown.close();  // close scanner after use
+		
 }
