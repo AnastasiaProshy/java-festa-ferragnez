@@ -15,4 +15,18 @@ public class CheckGuest {
 		String userName = noteDown.nextLine();
 		noteDown.close();  // close scanner after use
 		
+		boolean nameFound = false;
+		for (int i = 0; i < invitedGuests.length; i++ ) {
+			if (invitedGuests[i] != null && invitedGuests[i].equals(userName)) { // Use equals() to compare strings
+				nameFound = true;
+				break; // Exit the loop as soon as find the name
+			}
+		}
+		
+		if (nameFound) {
+            System.out.println("Allowed");
+        } else {
+            System.out.println("You are not on the guest list");
+        }
+	}
 }
